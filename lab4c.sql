@@ -1,0 +1,2 @@
+CREATE VIEW EmpNames AS SELECT first_name FROM dept_manager JOIN employees ON dept_manager.emp_no = employees.emp_no JOIN departments ON dept_manager.dept_no = departments.dept_no WHERE dept_name = "Finance";
+CREATE VIEW Date AS SELECT from_date FROM dept_manager JOIN employees ON dept_manager.emp_no = employees.emp_no JOIN departments  ON dept_manager.dept_no = departments.dept_no WHERE dept_name = "Production" ORDER BY from_date DESC LIMIT 1;
